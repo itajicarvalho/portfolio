@@ -7,23 +7,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <title>Itaji de Carvalho</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
   <div class="main-box">
-    <nav>
-      <h2 id="portfolio">Portfolio</h2>
-      <ul>
-        <li class="nav-link"><a>Home</a></li>
-        <li class="nav-link"><a>Sobre</a></li>
-        <li class="nav-link"><a>Projetos</a></li>
-        <li class="nav-link"><a>Fale comigo</a></li>
-      </ul>
+    <nav class="navbar navbar-expand navbar-dark">
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/projetos.html">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div id="nome">
-      <h1>Itaji De Carvalho</h1>
-      <h3>Desenvolvedor Full-Stack</h3>
+    <div class="container d-flex align-items-center p-5 bg-transparent">
+      <div id="nome" class="container p-5 bg-transparent">
+        <h1 class="bg-transparent">Itaji De Carvalho</h1>
+        <h3 class="bg-transparent">Desenvolvedor Full-Stack</h3>
+      </div>
+      <img class="img-thumbnail w-50 d-none d-md-block" alt="Imagem Responsiva" src="./img/full-stack-development.png">
     </div>
+    <section id="sobre">
+      <div class="d-flex w-80">
+        <img class="ml-2" src="./img/WhatsApp Image 2024-05-15 at 12.48.52.jpeg">
+        <div class="mr-5">
+          <h2>Sobre mim</h2>
+          <p>
+            Tenho experiência no uso dos frameworks Spring, Flask, Express, React, Angular e NextJs.
+            Recentemente concluí o curso Desenvolvimento Web de Software da Trybe e atualmente estou cursando a faculdade de Sistemas para Internet na UNIESP.
+            <br>Já desenvolvi diversos projetos de back, front e full-stack, sendo alguns deles feitos em grupo, todos esses projetos estão em meu github e lá você poderá ver um pouco mais da minha história na programação.
+          </p>
+          <button class="contato">
+            <a>Entre em contato</a>
+          </button>
+        </div>
+      </div>
+    </section>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

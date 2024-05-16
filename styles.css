@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: #191919;
 }
 
 .main-box {
@@ -15,40 +16,8 @@
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
   background-color: #191919;
   height: 70px;
-}
-
-#portfolio {
-  color: beige;
-}
-
-.nav-link {
-  color: white;
-  list-style: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-  font-weight: 600;
-
-}
-
-.nav-link:hover {
-  color: #ac0202;
-  transition: 0.5s;
-  height: 20px;
-}
-
-#nome {
-  position: absolute;
-  top:20%;
-  left:10%;
 }
 
 #nome h1 {
@@ -58,4 +27,43 @@ nav {
 
 #nome h3 {
   color: #5353ff;
+  text-shadow: 1px 0.5px;
+}
+
+#sobre {
+  width: 80%;
+  margin: auto; 
+  padding: 60px 0;
+  background-color: #191919;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  #sobre {
+      width: 100%;
+  }
+}
+
+#sobre img {
+  height: 200px;
+  border-radius: 15%;
+  border: 2px solid white;
+}
+
+#sobre div h2 {
+  color: white;
+  padding: 10px 20px;
+}
+
+#sobre div p {
+  color: white;
+  padding: 0px 20px;
+}
+
+.contato {
+  background-color: rgb(184, 2, 2);
+  color: white;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
 }
