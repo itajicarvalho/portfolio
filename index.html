@@ -13,12 +13,12 @@
 <body>
   <div id="header-container"></div>
   <div class="main-box">
-    <div class="container d-flex align-items-center p-5 bg-transparent">
+    <div class="container d-flex align-items-center">
       <div id="nome" class="container p-5 bg-transparent">
         <h1 class="bg-transparent">Itaji De Carvalho</h1>
         <h3 class="bg-transparent">Desenvolvedor Full-Stack</h3>
       </div>
-      <img class="img-thumbnail w-50 d-none d-md-block" alt="Imagem Responsiva" src="./img/full-stack-development.png">
+      <img class="img-thumbnail w-50 mt-5 mb-5 d-none d-md-block" alt="Imagem Responsiva" src="./img/full-stack-development.png">
     </div>
     <section id="sobre">
       <div class="d-block d-sm-flex">
@@ -43,7 +43,14 @@
         fetch('./components/header.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('header-container').innerHTML = data;
+              document.getElementById('header-container').innerHTML = data;
+              let currentUrl = window.location.pathname;
+              let navLinks = document.querySelectorAll(".nav-link");
+              navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentUrl) {
+                  link.classList.add('active');
+                }
+              });
             });
         fetch('./components/footer.html')
         .then(response => response.text())
@@ -51,6 +58,7 @@
             document.getElementById('footer-container').innerHTML = data;
         });
     });
+    
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

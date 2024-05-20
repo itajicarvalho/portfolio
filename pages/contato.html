@@ -55,9 +55,16 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
         fetch('../components/header.html')
-            .then(response => response.text())
+          .then(response => response.text())
             .then(data => {
-                document.getElementById('header-container').innerHTML = data;
+              document.getElementById('header-container').innerHTML = data;
+              let currentUrl = window.location.pathname;
+              let navLinks = document.querySelectorAll(".nav-link");
+              navLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentUrl) {
+                  link.classList.add('active');
+                }
+              });
             });
         fetch('../components/footer.html')
         .then(response => response.text())
