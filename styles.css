@@ -14,11 +14,6 @@ html, body {
   overflow: auto;
 }
 
-nav {
-  background-color: #191919;
-  height: 70px;
-}
-
 #nome h1 {
   color: aliceblue;
   font-size: 35px;
@@ -39,7 +34,8 @@ nav {
 
 @media (max-width: 600px) {
   #sobre {
-      width: 100%;
+      width: 95%;
+      margin-bottom: 100px;
   }
 }
 
@@ -47,22 +43,4 @@ nav {
   height: 200px;
   border-radius: 15%;
   border: 2px solid white;
-}
-
-#sobre div h2 {
-  color: white;
-  padding: 10px 20px;
-}
-
-#sobre div p {
-  color: white;
-  padding: 0px 20px;
-}
-
-.contato {
-  background-color: rgb(184, 2, 2);
-  color: white;
-  padding: 10px;
-  margin-left: 20px;
-  border-radius: 10px;
 }
