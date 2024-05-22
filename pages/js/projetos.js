@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       images: ["/img/Store/Store01.png", "/img/Store/store02.png", "/img/Store/store03.png", "/img/Store/store04.png"],
       link: "https://lexart-app-frontend.vercel.app/login",
       repo: "https://github.com/itaji-create/lexart-app-frontend",
-      technologies: ["React", "JavaScript", "Bootstrap"]
+      technologies: ["React", "Bootstrap"]
     },
     2: {
       title: "Recipes",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       images: ["/img/Recipes/recipes01.png", "/img/Recipes/recipes02.png", "/img/Recipes/recipes03.png", "/img/Recipes/recipes04.png", "/img/Recipes/recipes05.png", "/img/Recipes/recipes06.png", "/img/Recipes/recipes07.png", "/img/Recipes/recipes08.png"],
       link: "https://recipes-app-ten-lovat.vercel.app/foods",
       repo: "https://github.com/itaji-create/recipes-app",
-      technologies: ["React", "ContextAPI", "Bootstrap"]
+      technologies: ["React", "Bootstrap"]
     },
     3: {
       title: "Delivery",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       images: ["/img/Delivery/delivery01.png", "/img/Delivery/delivery02.png", "/img/Delivery/delivery03.png", "/img/Delivery/delivery04.png", "/img/Delivery/delivery05.png"],
       link: "#",
       repo: "https://github.com/itaji-create/Delivery",
-      technologies: ["React", "JavaScript", "My Sql"]
+      technologies: ["React", "Bootstrap", "Express", "MySql", "Node.js"]
     }
   };
 
