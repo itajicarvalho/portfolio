@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (projectId > 1) {
       projectId -= 1;
       updateURL(projectId);
+      location.reload();
     }
   });
 
@@ -71,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (projectId < Object.keys(projectData).length) {
       projectId += 1;
       updateURL(projectId);
+      location.reload();
     }
   });
   loadProject(projectId);
